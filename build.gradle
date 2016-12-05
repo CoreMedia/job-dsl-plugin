@@ -155,7 +155,7 @@ project(':job-dsl-core') {
             maven {
                 name 'jenkins'
                 if (project.version.toString().endsWith('-SNAPSHOT')) {
-                    url 'https://repo.jenkins-ci.org/snapshots'
+                    url 'https://repository-build.coremedia.com/nexus/content/repositories/snapshots.short.retention'
                 } else {
                     url 'https://repo.jenkins-ci.org/releases'
                 }
